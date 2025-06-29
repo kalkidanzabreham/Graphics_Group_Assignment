@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Evacuation Simulator</title>
+    <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+
+    #ui {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.5); /* Added for better UI visibility */
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: Arial;
+    }
+
+    #loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background: rgba(0,0,0,0.7);
+        padding: 20px;
+        border-radius: 10px;
+        font-family: Arial;
+    }
+</style>
+
+</head>
+<body>
+    <!-- <div id="loading">Loading simulation assets...</div> -->
+    <div id="ui"></div>
+    <script type="module" src="/src/index.js"></script>
+</body>
+</html>
